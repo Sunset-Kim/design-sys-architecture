@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "declaration": true,
+        "declarationMap": true,
+        "declarationDir": "./dist",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "sourceMap": true,
+        "target": "es2020",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "lib": ["ESNext", "DOM"],
+        "jsx": "react-jsx"
+    }
+}

@@ -1,5 +1,7 @@
-import Image, { type ImageProps } from "next/image";
+"use client";
+
 import { Button } from "@repo/ui/button";
+import Image, { type ImageProps } from "next/image";
 import styles from "./page.module.css";
 
 type Props = Omit<ImageProps, "src"> & {
@@ -19,8 +21,14 @@ const ThemeImage = (props: Props) => {
 };
 
 export default function Home() {
+
+  const onToggleTheme = () => {
+    window.document.documentElement.classList.toggle("dark");
+  };
+  
   return (
     <div className={styles.page}>
+      <button onClick={onToggleTheme}>Toggle Theme</button>
       <main className={styles.main}>
         <ThemeImage
           className={styles.logo}
