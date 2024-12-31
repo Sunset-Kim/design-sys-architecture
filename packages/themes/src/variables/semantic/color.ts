@@ -1,4 +1,4 @@
-export const  semantic = {
+export const color = {
   bgLight: "var(--black-alpha-50)",
   bgDark: "var(--black-alpha-900)",
   textLight: "var(--black-alpha-900)",
