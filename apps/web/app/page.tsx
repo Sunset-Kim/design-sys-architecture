@@ -21,15 +21,15 @@ const ThemeImage = (props: Props) => {
 };
 
 export default function Home() {
-
   const onToggleTheme = () => {
     window.document.documentElement.classList.toggle("dark");
   };
-  
+
   return (
     <div className={styles.page}>
       <button onClick={onToggleTheme}>Toggle Theme</button>
       <main className={styles.main}>
+        <p className="heading-4xl">바보야</p>
         <ThemeImage
           className={styles.logo}
           srcLight="turborepo-dark.svg"
